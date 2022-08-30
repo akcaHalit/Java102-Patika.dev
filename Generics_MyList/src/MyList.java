@@ -5,7 +5,6 @@ public class MyList <T>{
 	private T[] list;
 	private T[] tempList;
  	private int capacity;
-	//private int index = 0;
 	
 	MyList(){
 		this.capacity = 10;
@@ -57,7 +56,7 @@ public class MyList <T>{
 		this.list[index] = null;
 		for(int i = index; i<size(); i++) {
 			if(size()-i == 1 ) {
-				this.list[i] = null;   //Sondaki deðeri-indexi bulup null yapýyor 
+				this.list[i] = null;   //Sondaki deÃ°eri-indexi bulup null yapÃ½yor 
 			}else{
 				this.list[i] = tempList[i+1];
 			}
